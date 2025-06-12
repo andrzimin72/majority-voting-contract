@@ -1,5 +1,4 @@
-# majority-voting-contract
-Majority voting contract
+# Majority voting contract
 
 The majority voting system is a way of determining the election results, in which the candidate who obtains the majority of votes prescribed by law is considered elected. 
 The majority system has three main subspecies:
