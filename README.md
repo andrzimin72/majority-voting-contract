@@ -10,7 +10,7 @@ In essence, it is a voting system according to the principle of «winner take al
 
 This is a solid example of a structured voting DApp. It’s a version of the contract compatible with Solidity 0.8.20, including: safe use of pragma abicoder v2; added SafeCast if needed in future.
 I use Hardhat and Waffle to write tests for registration flow, proposal registration, voting, tallying, access control and stage transitions.
-Next deploy to a Testnet (e.g., Sepolia). Get ETH from faucet. Go to https://sepoliafaucet.com/. And request ETH for your wallet address (use MetaMask or similar).
+Next step is deploy to a Testnet (e.g., Sepolia). Let's get ETH from faucet. Then go to https://sepoliafaucet.com/. And request ETH for your wallet address (use MetaMask or similar).
 I'd like to create a simple frontend DApp to interact with  SimpleVoting.sol smart contract. What I Build: A basic React + Ethers.js voting DApp that allows users to: view current workflow status; register voters (admin only); submit proposals; vote on proposals; end phases and tally votes; view results. I’ll assume you’ve already upgraded the contract to Solidity 0.8.20 and deployed it to a testnet like Sepolia.
 
 Step 1. Setup Frontend with Vite + React:
