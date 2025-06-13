@@ -15,12 +15,15 @@ I'd like to create a simple frontend DApp to interact with  SimpleVoting.sol sma
 
 Step 1. Setup Frontend with Vite + React:
 
+bash
 cd voting-dapp
 mkdir frontend && cd frontend
 npm create vite@latest . --template react
 npm install
 
 Install required dependencies:
+
+bash
 npm install ethers @metamask/detect-provider
 
 Step 2. Add Contract ABI. 
