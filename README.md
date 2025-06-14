@@ -24,6 +24,7 @@ Install required dependencies:
 ```
 npm install ethers @metamask/detect-provider
 ```
+
 ##Step 2. Add Contract ABI. 
 
 After deploying your contract, copy its ABI from: 
@@ -38,6 +39,7 @@ src/utils/contractAbi.js
 ```
 src/hooks/useVotingContract.js
 ```
+
 ##Step 4. UI Components:
 We’ll now build modular components for each action.
 
@@ -65,6 +67,7 @@ Final App Layout:
 ```
 src/App.jsx;
 ```
+
 ##Step 5: Run the DApp
 
 Start the dev server: 
