@@ -13,48 +13,64 @@ I use Hardhat and Waffle to write tests for registration flow, proposal registra
 Next step is deploy to a Testnet (e.g., Sepolia). Let's get ETH from faucet. Then go to https://sepoliafaucet.com/. And request ETH for your wallet address (use MetaMask or similar).
 I'd like to create a simple frontend DApp to interact with  SimpleVoting.sol smart contract. What I Build: A basic React + Ethers.js voting DApp that allows users to: view current workflow status; register voters (admin only); submit proposals; vote on proposals; end phases and tally votes; view results. I’ll assume you’ve already upgraded the contract to Solidity 0.8.20 and deployed it to a testnet like Sepolia.
 
-Step 1. Setup Frontend with Vite + React:
-
+##Step 1. Setup Frontend with Vite + React:
+```
 cd voting-dapp
 mkdir frontend && cd frontend
 npm create vite@latest . --template react
 npm install
-
+```
 Install required dependencies:
-
+```
 npm install ethers @metamask/detect-provider
-
-Step 2. Add Contract ABI. 
+```
+##Step 2. Add Contract ABI. 
 
 After deploying your contract, copy its ABI from: 
+```
 artifacts/contracts/SimpleVoting.sol/SimpleVoting.json
-
+```
 Create a file in your frontend: 
+```
 src/utils/contractAbi.js
-
-Step 3. Create Web3 Hook: 
+```
+##Step 3. Create Web3 Hook: 
+```
 src/hooks/useVotingContract.js
-
-Step 4. UI Components:
+```
+##Step 4. UI Components:
 We’ll now build modular components for each action.
 
-Component 1. Connect Wallet & Display Status: src/components/StatusDisplay.jsx;
-
-Component 2. Admin – Register Voter: src/components/VoterRegistration.jsx;
-
-Component 3. Submit Proposal: src/components/ProposalRegistration.jsx;
-
-Component 4. Vote: src/components/Vote.jsx;
-
-Component 5. Tally Votes: src/components/Results.jsx;
-
-Final App Layout: src/App.jsx;
-
-Step 5: Run the DApp
+Component 1. Connect Wallet & Display Status: 
+```
+src/components/StatusDisplay.jsx;
+```
+Component 2. Admin – Register Voter: 
+```
+src/components/VoterRegistration.jsx;
+```
+Component 3. Submit Proposal: 
+```
+src/components/ProposalRegistration.jsx;
+```
+Component 4. Vote: 
+```
+src/components/Vote.jsx;
+```
+Component 5. Tally Votes: 
+```
+src/components/Results.jsx;
+```
+Final App Layout: 
+```
+src/App.jsx;
+```
+##Step 5: Run the DApp
 
 Start the dev server: 
+```
 npm run dev
-
+```
 Open in browser: http://localhost:5173
 Connect MetaMask and start interacting with majority voting contract.
 
