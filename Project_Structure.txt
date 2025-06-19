@@ -1,0 +1,25 @@
+voting-dapp/
+├── contracts/
+│   └── SimpleVoting.sol
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── components/
+│   │   │   ├── VoterRegistration.jsx
+│   │   │   ├── ProposalRegistration.jsx
+│   │   │   ├── Vote.jsx
+│   │   │   ├── Results.jsx
+│   │   │   └── StatusDisplay.jsx
+│   │   ├── hooks/
+│   │   │   └── useVotingContract.js
+│   │   ├── utils/
+│   │   │   └── contractAbi.js
+│   │   ├── App.css
+│   │   └── index.js
+│   ├── package.json
+│   └── README.md
+├── scripts/
+│   └── deploy.js
+├── hardhat.config.js
+└── README.md
